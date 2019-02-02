@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+:root {
+  --grey: #ececec;
+  --first: #BD4F6C;
+  --second: #F0CF65;
+  --third: #5E9EAD;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Roboto";
+  height: 100vh;
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-height: 350px;
+}
+
+.place {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  flex-wrap: wrap;
+  flex: 1;
+  text-align: center;
+}
+
+.stupid-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px auto 100px auto;
+  min-height: 350px;
+}
+
+.silo {
+    height: 170px;
+    background: #ececec;
+    color: #fff;
+    min-width: 15vw;
+    border-radius: 5px;
+    position: relative;
+}
+
+.silo span {
+  font-size: 4rem;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0px;
+}
+
+.scoreboard p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+p small {
+  font-size: 1.2rem;
+}
+
+.scoreboard .place:nth-child(2) .silo {
+  background: var(--first)
+}
+
+.scoreboard .place:nth-child(1) .silo {
+  background: var(--second)
+}
+
+.scoreboard .place:nth-child(3) .silo {
+  background: var(--third)
+}
