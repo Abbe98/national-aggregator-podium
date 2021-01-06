@@ -39,6 +39,10 @@ queryEuropeana().then(data => {
       aggregator.label = 'K-samsök'
     }
     
+    if (aggregator.label == 'Deutsche Digitale Bibliothek') {
+      aggregator.label = 'DDB'
+    }
+    
     return aggregator;
   });
 }).then(stats => {
